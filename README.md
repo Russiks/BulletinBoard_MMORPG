@@ -10,7 +10,7 @@ ________________________________________________________________________________
 ____________________________________________________________________________________________________________
 
 </p></p></p>
-<p dir="auto"><strong>Для запуска полекта необходимо вам понадобится склонировать его на свой ПК через&nbsp;git clone, активировать виртуальное окружение, установить все необходимый зависмости из&nbsp;requirements.txt, перейти в корень проекта, в трех окнах терминала поочередно запустить: &nbsp;в первом окне - Celery для асинхронной обработки задач по отправке писем (письма будут приходить туда); во втором окне -&nbsp;Celery&nbsp;для&nbsp;обработки периодических задач; и в последнем окне сервер проекта. Не забываем о запуске Redis;)</strong></p>
+<p dir="auto"><strong>Для запуска проекта необходимо вам понадобится склонировать его на свой ПК через&nbsp;git clone, активировать виртуальное окружение, установить все необходимый зависмости из&nbsp;requirements.txt, перейти в корень проекта, в трех окнах терминала поочередно запустить: &nbsp;в первом окне - Celery для асинхронной обработки задач по отправке писем (письма будут приходить туда); во втором окне -&nbsp;Celery&nbsp;для&nbsp;обработки периодических задач; и в последнем окне сервер проекта. Не забываем о запуске Redis;)</strong></p>
 <p dir="auto"><span style="text-decoration: underline;"><em>Необходимые команды:</em></span></p>
 <ul dir="auto">
 <li><span style="color: #ff0000;">redis-server</span> - запуск Redis (проверить работу можно через команду redis-cli ping - в ответ вы получите pong, если все работает)</li>
@@ -68,11 +68,16 @@ ________________________________________________________________________________
 </ul>
 
 ![Image 10](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-21-47.png)
-![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-24-12.png)
-![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-24-51.png)
-![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-26-25.png)
-![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-25-24.png)
-![Image]()
+![Image 11](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-24-12.png)
+![Image 12](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-24-51.png)
+![Image 13](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-26-25.png)
+![Image 14](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-25-24.png)
+
+<ul>
+<li><strong>При отсутствие комментариев, будет выводиться соответствующее сообщение</strong></li>
+</ul>
+
+![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-25-50.png)
 ![Image]()
 ![Image]()
 ![Image]()
