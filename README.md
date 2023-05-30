@@ -26,14 +26,36 @@ ________________________________________________________________________________
 </p></p></p>
 
 <li><strong>Работа Redis</strong></li>
+![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-00-16.png)
 
-![Image redis](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-00-16.png)
+<li><strong>Работа Celery worker</strong></li>
+![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-04-29.png)
 
-<li><strong>Работа Celery</strong></li>
+<li><strong>Работа Celery beat</strong></li>
+![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-05-32.png)
 
-![Image celery 1](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-04-29.png)
+![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-06-30.png)
 
-<li><strong>Работа Celery</strong></li>
 
-![Image celery 2](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-05-32.png)
-![Image redis]()
+![Image]()
+![Image]()
+![Image]()
+![Image]()
+![Image]()
+![Image]()
+![Image]()
+![Image]()
+![Image]()
+![Image]()
+![Image]()
+![Image]()
+![Image]()
+![Image]()
+![Image]()
+![Image]()
+![Image]()
+![Image]()
+![Image]()
+![Image]()
+![Image]()
+
