@@ -10,15 +10,20 @@ ________________________________________________________________________________
 ____________________________________________________________________________________________________________
 
 </p></p></p>
-<p dir="auto"><strong>Для запуска полекта необходимо вам понадобится склонировать его на свой ПК через&nbsp;git clone, активировать виртуальное окружение, установить все необходимый зависмости из&nbsp;requirements.txt, перейти в корень проекта, в трех окнах терминала поочередно запустить: &nbsp;в первом окне - Celery для асинхронной обработки задач по отправке писем (письма будут приходить туда); во втором окне -&nbsp;Celery&nbsp;для&nbsp;обработки периодических задач; и в последнем окне сервер проекта.</strong></p>
+<p dir="auto"><strong>Для запуска полекта необходимо вам понадобится склонировать его на свой ПК через&nbsp;git clone, активировать виртуальное окружение, установить все необходимый зависмости из&nbsp;requirements.txt, перейти в корень проекта, в трех окнах терминала поочередно запустить: &nbsp;в первом окне - Celery для асинхронной обработки задач по отправке писем (письма будут приходить туда); во втором окне -&nbsp;Celery&nbsp;для&nbsp;обработки периодических задач; и в последнем окне сервер проекта. Не забываем о запуске Redis;)</strong></p>
 <p dir="auto"><span style="text-decoration: underline;"><em>Необходимые команды:</em></span></p>
 <ul dir="auto">
+<li><span style="color: #ff0000;">redis-server</span> - запуск Redis (проверить работу можно через команду redis-cli ping - в ответ вы получите pong, если все работает)</li>
 <li><span style="color: #ff0000;">git clone *ссылка на проект*</span> - клонируем проект</li>
 <li><span style="color: #ff0000;">venv\scripts\activate</span> - активируем виртуалку</li>
 <li><span style="color: #ff0000;">pip install -r requirements.txt</span> - устанавливаем зависимости</li>
 <li><span style="color: #ff0000;">cd *имя проекта*</span> - переходим в корень проекта</li>
-<li><span style="color: #ff0000;">celery -A mmorpg worker -l INFO --pool=solo</span> - асинхронная обработка</li>
-<li><span style="color: #ff0000;">celery -A mmorpg beat -l INFO</span> - периодические задачи</li>
+<li><span style="color: #ff0000;">celery -A BoardSetting worker -l INFO --pool=solo</span> - асинхронная обработка</li>
+<li><span style="color: #ff0000;">celery -celery -A BoardSetting beat -l INFO</span> - периодические задачи</li>
 <li><span style="color: #ff0000;">py manage.py runserver</span> - запуск сервера <a href="http://127.0.0.1:8000/" rel="nofollow">http://127.0.0.1:8000/</a></li>
 </ul>
 
+![Image redis](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-00-16.png)
+![Image celery 1](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-04-29.png)
+![Image celery 2](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-05-32.png)
+![Image redis]()
