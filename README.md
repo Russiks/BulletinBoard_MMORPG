@@ -41,8 +41,10 @@ ________________________________________________________________________________
 
 ![Image 4](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-06-30.png)
 
+<h4 style="text-align: center;"><strong>Пара слов о сайте и его работе;)</strong></h4>
+
 <ul>
-<li><strong>На сайте на главной странице организован поис в по объявлениям с пагинацией страниц</strong></li>
+<li><strong>На сайте на главной странице организован поиск по объявлениям с пагинацией страниц</strong></li>
 </ul>
 
 ![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-17-14.png)
