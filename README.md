@@ -68,11 +68,10 @@ ________________________________________________________________________________
 </ul>
 
 ![Image 10](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-21-47.png)
-
 ![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-24-12.png)
-![Image]()
-![Image]()
-![Image]()
+![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-24-51.png)
+![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-26-25.png)
+![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-25-24.png)
 ![Image]()
 ![Image]()
 ![Image]()
