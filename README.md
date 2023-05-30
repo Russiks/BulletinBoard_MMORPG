@@ -24,16 +24,16 @@ ________________________________________________________________________________
 </ul>
 
 </p></p></p>
-<ul>
+
 <li><strong>Работа Redis</strong></li>
-</ul>
+
 ![Image redis](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-00-16.png)
-<ul>
+
 <li><strong>Работа Celery</strong></li>
-</ul>
+
 ![Image celery 1](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-04-29.png)
-<ul>
+
 <li><strong>Работа Celery</strong></li>
-</ul>
+
 ![Image celery 2](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-05-32.png)
 ![Image redis]()
