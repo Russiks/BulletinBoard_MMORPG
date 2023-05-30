@@ -77,11 +77,18 @@ ________________________________________________________________________________
 <li><strong>При отсутствие комментариев, будет выводиться соответствующее сообщение</strong></li>
 </ul>
 
-![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-25-50.png)
-![Image]()
-![Image]()
-![Image]()
-![Image]()
+![Image 15](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-25-50.png)
+
+<ul>
+<li><strong>Для создания объявления у автора есть отдельная страница с подключенным редактором CKeditor, который позволяет прикреплять видео и картинки из сети</strong></li>
+</ul>
+
+![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-27-31.png)
+
+
+![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-28-08.png)
+![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-28-31.png)
+![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-29-00.png)
 ![Image]()
 ![Image]()
 ![Image]()
