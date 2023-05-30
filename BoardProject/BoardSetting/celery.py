@@ -12,6 +12,6 @@ app.autodiscover_tasks()
 app.conf.beat_schedule = {
     'weekle_ad_every_monday': {
         'task': 'BoardApp.tasks.mail_every_task',
-        'schedule': crontab(),
+        'schedule': crontab(day_of_week="monday", hour=9, minute=0),
     },
 }
