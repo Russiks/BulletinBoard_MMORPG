@@ -37,6 +37,8 @@ ________________________________________________________________________________
 
 ![Image 3](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-05-32.png)
 
+<li><strong>Работа runserver</strong></li>
+
 ![Image 4](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-06-30.png)
 
 
