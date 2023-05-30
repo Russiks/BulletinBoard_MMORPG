@@ -26,15 +26,15 @@ ________________________________________________________________________________
 </p></p></p>
 
 <li><strong>Работа Redis</strong></li>
-![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-00-16.png)
+![Image1](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-00-16.png)
 
 <li><strong>Работа Celery worker</strong></li>
-![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-04-29.png)
+![Image2](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-04-29.png)
 
 <li><strong>Работа Celery beat</strong></li>
-![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-05-32.png)
+![Image3](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-05-32.png)
 
-![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-06-30.png)
+![Image4](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-06-30.png)
 
 
 ![Image]()
