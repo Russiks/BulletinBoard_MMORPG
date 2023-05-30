@@ -110,10 +110,10 @@ ________________________________________________________________________________
 ![Image 25](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-31-48.png)
 ![Image 26](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-59-40.png)
 
+<ul>
+<li><strong>Так же пользователи будут получать рассылку с еженедельным дайджестом новых объявлений</strong></li>
+</ul>
 
-![Image]()
-![Image]()
-![Image]()
-![Image]()
-![Image]()
+![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_13-03-11.png)
+
 
