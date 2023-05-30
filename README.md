@@ -101,10 +101,16 @@ ________________________________________________________________________________
 ![Image 21](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-30-12.png)
 ![Image 22](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-30-51.png)
 
-![Image]()
-![Image]()
-![Image]()
-![Image]()
+<ul>
+<li><strong>При регистрации нового пользователя ему придет письмо со ссылкой для подтверждения регистрации. А после подтверждения регистрации, придет код, который дает право быть автором и создавать объявления. Этот код он вводит в соответсующее поле в ЛК</strong></li>
+</ul>
+
+![Image 23](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-33-22.png)
+![Image 24](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-58-41.png)
+![Image 25](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-31-48.png)
+![Image 26](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-59-40.png)
+
+
 ![Image]()
 ![Image]()
 ![Image]()
