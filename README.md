@@ -83,15 +83,27 @@ ________________________________________________________________________________
 <li><strong>Для создания объявления у автора есть отдельная страница с подключенным редактором CKeditor, который позволяет прикреплять видео и картинки из сети</strong></li>
 </ul>
 
-![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-27-31.png)
+![Image 16](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-27-31.png)
 
 <ul>
 <li><strong>У пользователя есть своя страница с профилем, где он может редактировать его или переходить на личную страницу со списком комментариев к его объявлениям</strong></li>
 </ul>
 
-![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-28-08.png)
-![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-28-31.png)
-![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-29-00.png)
+![Image 17](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-28-08.png)
+![Image 18](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-28-31.png)
+![Image 19](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-29-00.png)
+
+<ul>
+<li><strong>На личной странице со списком комментариев к его объявлениям у автора есть возможность поиска и пагинации страниц комментариев, отклика или удаления комментариев, а также возможность открывать комментарии по отдельности</strong></li>
+</ul>
+
+![Image 20](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-29-31.png)
+![Image 21](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-30-12.png)
+![Image 22](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-30-51.png)
+
+![Image]()
+![Image]()
+![Image]()
 ![Image]()
 ![Image]()
 ![Image]()
