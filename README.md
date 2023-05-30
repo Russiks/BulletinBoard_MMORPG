@@ -56,7 +56,12 @@ ________________________________________________________________________________
 ![Image 6](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-19-45.png)
 ![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-20-17.png)
 
-![Image]()
+<ul>
+<li><strong>Оставлять комментарии или создавать объявления могут только зарегистрированные пользователи, которые ввели код подтверждения. Для остальных переработано исключение 403</strong></li>
+</ul>
+
+![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-32-33.png)
+
 ![Image]()
 ![Image]()
 ![Image]()
