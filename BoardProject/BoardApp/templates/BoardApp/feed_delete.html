@@ -1,0 +1,35 @@
+{% extends 'config/default.html' %}
+
+{% block title %}
+Delete Feedback - {{ block.super }}
+{% endblock title %}
+
+{% block content %}
+ <br>
+    <h1><span style="color: #800000;">{{ question2 }}</span></h1>
+    <br>
+    {% autoescape off %}
+    <br>
+    <div class="card text-center">
+        <div class="card-body">
+            <p class="card-text">
+                {{ object.textComment }}
+            </p>
+        </div>
+    </div>
+    {% endautoescape %}
+    <hr style="color: #999999;">
+
+    <span style="color: #666699;">Reviewer - {{ object.author }}</span> |
+    <span style="color: #666699;">Publication date: {{ object.dateCreation|date:'d M Y f' }}</span>
+
+    <br><br>
+
+    <form method="POST">
+    {% csrf_token %}
+    <input type="submit" class="btn btn-secondary" style="background: red" value="Yeah, I'm sure"></form>
+    <br>
+    <input type=button value="No, I'm not sure." class="btn btn-secondary" style="background: blue" onClick="history.go(-1);">
+
+
+{% endblock content %}

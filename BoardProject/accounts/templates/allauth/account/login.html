@@ -1,0 +1,29 @@
+{% extends 'config/default.html' %}
+
+{% block title %}
+In - {{ block.super }}
+{% endblock title %}
+
+
+{% block content %}
+<br>
+<h2><span style="color: #999999;">Sign in</span></h2>
+<br>
+<form method="post" action="{% url 'account_login' %}">
+{% csrf_token %}
+<table>
+<tr>
+    <td>{{ form.username.label_tag }}</td>
+    <td>{{ form.username }}</td>
+</tr>
+<tr>
+    <td>{{ form.password.label_tag }}</td>
+    <td>{{ form.password }}</td>
+</tr>
+</table>
+<br>
+<input type="submit" value="Log in">
+</form>
+<br>
+<button> <a href="/accounts/signup/"> Sign Up </a></button>
+{% endblock %}

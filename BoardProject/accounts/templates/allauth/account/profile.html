@@ -1,0 +1,54 @@
+{% extends 'config/default.html' %}
+
+{% block title %}
+Profile - {{ block.super }}  <!--Наследование через {{ block.super }} от основного шаблона-->
+{% endblock title %}
+
+{% block content %}
+
+    <br><br>
+
+    <h2><span style="color: #999999;">Your profile:</span></h2>
+    <br>
+    <div class="card text-center">
+        <div class="card-body">
+            <p class="card-text">
+                <h5 style="color: #333399;">User name:</h5>
+                    <h6>{{user.username}}</h6>
+            <hr style="color: #999999;">
+                <h5 style="color: #333399;">First name:</h5>
+                    <h6>{{user.first_name}}</h6>
+             <hr style="color: #999999;">
+                <h5 style="color: #333399;">Last name:</h5>
+                    <h6> {{user.last_name}}</h6>
+            <hr style="color: #999999;">
+                <h5 style="color: #333399;">E-mail:</h5>
+                    <h6>{{user.email}}</h6>
+            </p>
+        </div>
+    </div>
+    <br><br>
+    <a class="btn btn-secondary" style="background: orange" href="{% url 'feedback_list' %}" role="button">Feedback List</a>
+    <br><br>
+    <a class="btn btn-secondary" style="background: green" href="{% url 'account_edit' %}" role="button">Edit data</a>
+    <a class="btn btn-secondary" style="background: red" href="{% url 'account_logout' %}" role="button">Sign out </a>
+
+    <br><br><br>
+    {% if auth == False %}
+        <h5 style="color: #800000;">To complete your registration and be able to create ads,<br>
+            enter the confirmation code sent to the email address you provided:</h5><br>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form }}
+            <input class="btn btn-secondary" style="background: purple" type="submit" value="Check">
+        </form>
+        {% if code_not_correct %}
+            <a style="font-size: 16px; color:red">{{ code_not_correct }}</a><br>
+            <a href="{% url 'auth_code' %}" style="font-size: 16px; color:blue">Send new code</a>
+        {% endif %}
+    {% else %}
+        <h5><span style="color: #993300;">Your email is confirmed</span></h5>
+        <a><span style="color: #993300;">You can post new ads and respond to them</span></a>
+    {% endif %}
+
+{% endblock %}

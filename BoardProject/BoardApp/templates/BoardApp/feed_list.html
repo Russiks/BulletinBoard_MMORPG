@@ -1,0 +1,110 @@
+{% extends 'config/default.html' %}
+
+{% load custom_tags %}
+
+{% block title %}
+Feedback list - {{ block.super }}
+{% endblock title %}
+
+{% block content %}
+
+
+    <div class="card mb-2">
+        <div class="card-header text-white" style="background-color: #000080;">
+            <h5><span style="color: #999999;">Hello, {{ request.user.username }}. Here you will find all the reviews of your ads.</span></h5>
+        <hr style="color: #999999;">
+            <form action="" method="get">
+                {% csrf_token %}
+                <h7><span style="color: #999999;">{{ filterset.form.as_p }}</span></h7>
+                <hr style="color: #999999;">
+                <input type="submit" value="Search" />
+                </p>
+            </form>
+    </div>
+
+    <div class="card-body">
+        <a href="{% url 'board_list' %}"><input type="submit" value="Home page" /></a>
+        <hr style="color: #999999;">
+        {% for ad in profile %}
+                <div class="card" style="background-color: #99ccff;">
+                    </p>
+                    <h5>Ad Title:</h5> <h4>{{ ad.titleBoard }}</h4>
+                </div>
+                <div class="card-bode" style="background-color: #00ccff;">
+                </p>
+                <h5>Contents:</h5>
+                </div>
+                <p>{{ ad.contentBoard|safe }}</p>
+                <div class="card-bode" style="background-color: #00ccff;">
+                    </p>
+                    <h5>Feedback:</h5>
+                </div>
+            {% if ad.comment_by_ad.all %}
+            {% for response in ad.comment_by_ad.all %}
+            {{ response.textComment }}
+            <br>
+            <br>
+                <div class="card-footer" style="background-color: #333399;">
+
+                    <span style="color: #666699;">Reviewer - {{ response.author }}</span> |
+                    <span style="color: #666699;">Publication date: {{ response.dateCreation|date:'d M Y f' }}</span> |
+
+                    {% if response.confirmComment %}
+                        {% if ad.author == request.user %}
+                    <a href="{% url 'feedback_deactive' pk=ad.id pk_feed=response.id %}" style="background: brown" class="btn btn-secondary btn-sm"> Reject </a>
+                        {% endif %}
+                    <span style="color: #666699;">Feedback Status:</span> <span style="color: #99cc00;">Actively</span>
+                    {% else %}
+                        {% if ad.author == request.user %}
+                    <a href="{% url 'feedback_active' pk=ad.id pk_feed=response.id %}" style="background: green" class="btn btn-secondary btn-sm"> Adopt </a>
+                        {% endif %}
+                    <span style="color: #666699;">Feedback Status:</span><span style="color: #ff6600;">Not actively</span>
+                    {% endif %}
+                </div>
+                        </p>
+                        <p class="text-center"><a href="{% url 'feedback_detail' pk=ad.id pk_feed=response.id %}" style="background: green" class="btn btn-secondary btn-sm"> Open Feedback</a></p>
+                    {% if ad.author == request.user %}
+                        </p>
+                         <p class="text-center"><a href="{% url 'feedback_delete' pk=ad.id pk_feed=response.id %}" style="background: red" class="btn btn-secondary btn-sm"> Delete Feedback </a></p>
+                        <hr style="color: #999999;">
+                    {% endif %}
+
+            {% endfor %}
+            {% else %}
+            <p><span style="color: #993300;">No feedback so far!</span>
+            {% endif %}
+                {% empty %}
+                    <h2>
+                        <span style="color: #999999;">No Feedback</span>
+                    </h2>
+        {% endfor %}
+        <hr style="color: #999999;">
+        <a href="{% url 'board_list' %}"><input type="submit" value="Home page" /></a>
+        </div>
+    </div>
+
+    <hr style="color: #999999;">
+
+   {# Информация о предыдущих страницах #}
+   {% if page_obj.has_previous %}
+       <a href="?{% url_replace page=1 %}" style="color: #ffffff;">1</a>
+       {% if page_obj.previous_page_number != 1 %}
+           <span style="color: #999999;">...</span>
+           <a href="?{% url_replace page=page_obj.previous_page_number %}" style="color: #ffffff;">{{ page_obj.previous_page_number }}</a>
+       {% endif %}
+   {% endif %}
+
+   {# Информация о текущей странице #}
+   <span style="color: #999999;">{{ page_obj.number }}</span>
+
+   {# Информация о следующих страницах #}
+   {% if page_obj.has_next %}
+       <a href="?{% url_replace page=page_obj.next_page_number %}" style="color: #ffffff;">{{ page_obj.next_page_number }}</a>
+       {% if paginator.num_pages != page_obj.next_page_number %}
+           <span style="color: #999999;">...</span>
+           <a href="?{% url_replace page=page_obj.paginator.num_pages %}" style="color: #ffffff;">{{ page_obj.paginator.num_pages }}</a>
+       {% endif %}
+   {% endif %}
+    <hr style="color: #999999;">
+
+{% endblock content %}

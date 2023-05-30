@@ -1,0 +1,25 @@
+{% extends 'config/default.html' %}
+
+{% block title %}
+Feedback Detail - {{ block.super }}
+{% endblock title %}
+
+{% block content %}
+    <br>
+    <h2><div><span style="color: #999999;"><strong>Feedback</strong></span></div></h2>
+    <br>
+    <div class="card text-center">
+        <div class="card-body">
+            <p class="card-text">
+                 {{ feed.textComment }}
+            </p>
+        </div>
+    </div>
+    <hr style="color: #999999;">
+            <span style="color: #666699;">Feedback from: {{ feed.author }}</span>
+            <span style="color: #666699;">| Feedback date: {{ feed.dateCreation|date:'d M Y f' }} </span>
+
+    <br><br>
+    <input type=button value="Back" class="btn btn-secondary" onClick="history.go(-1);">
+
+{% endblock content %}

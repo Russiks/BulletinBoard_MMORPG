@@ -1,0 +1,19 @@
+{% extends 'config/default.html' %}
+
+{% block title %}
+Create Ad - {{ block.super }}
+{% endblock title %}
+{% load static %}
+
+{% block content %}
+    <br>
+    <h2><div><span style="color: #999999;"><strong>New Ad</strong></span></div></h2>
+    <br>
+	<form method="post" enctype="multipart/form-data">
+		{% csrf_token %}
+        {{ form.media }}
+        <span style="color: #999999;">{{ form.as_p }}</span>
+		<input class="btn btn-secondary" style="background-color: #74992e;" type="submit" value="Save">
+	</form><br>
+    <input type=button value="Back" class="btn btn-secondary" onClick="history.go(-1);">
+{% endblock content %}

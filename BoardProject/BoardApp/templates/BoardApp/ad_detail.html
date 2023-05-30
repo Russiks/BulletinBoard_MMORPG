@@ -1,0 +1,84 @@
+<!--  наследуемся от шаблона default.html, который мы создавали для flatpages -->
+{% extends 'config/default.html' %}
+
+{% block title %}
+{{ ad.titleBoard }} - {{ block.super }}
+{% endblock title %}
+
+
+{% block content %}
+
+    <br>
+    {% autoescape off %}
+    <div class="card mb-2">
+        <div class="card-header text-white" style="background-color: #000080;">
+            <h3>{{ ad.titleBoard }}</h3>
+        </div>
+        <div class="card text-center">
+            <div class="card-body">
+                <p class="card-text">
+                    {{ ad.contentBoard|safe }}
+                </p>
+            </div>
+        </div>
+    {% endautoescape %}
+        <div class="card-footer  " style="background-color: #333399;">
+            <span style="color: #666699;">Author: {{ ad.author }}</span>
+            <span style="color: #666699;">| Category: {{ ad.get_categoryBoard_display }}</span>
+            <span style="color: #666699;">| Publication date: {{ ad.dateCreation|date:'d M Y' }} {{ ad.timeCreation|date:'f' }}</span>
+        </div>
+    </div>
+    <br>
+            <a class="btn btn-secondary" style="background: green" href="{% url 'board_list' %}" role="button">Close</a>
+            {% if ad.author == request.user %}
+            <a class="btn btn-secondary" style="background: blue" href="{% url 'board_edit' pk=ad.id %}" role="button">Edit</a>
+            <a class="btn btn-secondary" style="background: red" href="{% url 'board_delete' pk=ad.id %}" role="button">Delete</a>
+            {% endif %}
+            {% if request.user.is_authenticated and ad.author != request.user %}
+            <a class="btn btn-secondary" style="background: blue" href="{% url 'feedback_create' ad.pk %}" role="button">Leave a feedback</a>
+            {% endif %}
+    <hr style="color: #999999;">
+
+    <h4><span style="color: #999999;">Feedback List:</span></h4>
+    <br>
+    <div class="card text-center">
+        <div class="card-body">
+            <p class="card-text">
+    <ol style="list-style-type: upper-roman;">
+            {% for response in ad.comment_by_ad.all %}
+        <li>
+            <p>{{ response.textComment }}</p>
+                <div class="card-footer" style="background-color: #333399;">
+
+                    <span style="color: #666699;">Reviewer - {{ response.author }}</span> |
+                    <span style="color: #666699;">Publication date: {{ response.dateCreation|date:'d M Y f' }}</span> |
+                    <span style="color: #666699;">Feedback Status:</span>
+
+                    {% if response.confirmComment %}
+                        {% if ad.author == request.user %}
+                    <a href="{% url 'feedback_deactive' pk=ad.id pk_feed=response.id %}" style="background: brown" class="btn btn-secondary btn-sm"> Reject </a>
+                        {% endif %}
+                    <span style="color: #99cc00;">Actively</span>
+                    {% else %}
+                        {% if ad.author == request.user %}
+                    <a href="{% url 'feedback_active' pk=ad.id pk_feed=response.id %}" style="background: green" class="btn btn-secondary btn-sm"> Adopt </a>
+                        {% endif %}
+                    <span style="color: #ff6600;">Not actively</span>
+                    {% endif %}
+                </div>
+                    {% if ad.author == request.user %}
+                <div class="card" style="background-color: #99ccff;">
+                    </p>
+                    <p class="text-center"><a href="{% url 'feedback_delete' pk=ad.id pk_feed=response.id %}" style="background: red" class="btn btn-secondary btn-sm"> Delete </a></p>
+                </div>
+                    {% endif %}
+                <hr style="color: #999999;">
+                    {% empty %}
+                        <p><span style="color: #993300;">More feedback here!</span></p>
+            {% endfor %}
+        </li>
+    </ol>
+        </div>
+    </div>
+
+{% endblock content %}

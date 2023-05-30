@@ -1,0 +1,26 @@
+{% extends 'config/default.html' %}
+{% load bootstrap4 %}
+
+{% block title %}
+Profile update - {{ block.super }}
+{% endblock %}
+
+{% block content %}
+	<br>
+	<h2><div><span style="color: #999999;"><strong>Editing the profile:</strong></span></div></h2>
+	<br>
+		<div class="card text-center">
+			<div class="card-body">
+				<p class="card-text">
+					<form method="post">
+						{% csrf_token %}
+						{% bootstrap_form form layout='vertical' %}
+						<br>
+						{% buttons submit='Save' %}{% endbuttons %}
+					</form>
+				</p>
+			</div>
+		</div>
+	<br>
+		<a class="btn btn-secondary" style="background: green" href="{% url 'account_profile' %}" role="button">Close</a>
+{% endblock content %}

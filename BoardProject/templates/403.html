@@ -1,0 +1,31 @@
+<!--  наследуемся от шаблона default.html, который мы создавали для flatpages -->
+{% extends 'config/default.html' %}
+
+{% block title %}
+{{ ad.titleBoard }} - {{ block.super }}
+{% endblock title %}
+
+
+{% block content %}
+
+    <br>
+    <br>
+    {% autoescape off %}
+    <h1><span style="color: #800000;">Oops</span></h1>
+    <br>
+    <div class="card text-center">
+        <div class="card-body">
+            <p class="card-text">
+                <div><span style="color: #993300;">You don't seem to have access to this page... </span></div>
+                <div><span style="color: #993300;">Log in or enter the confirmation code</span></div>
+            </p>
+        </div>
+    </div>
+    {% endautoescape %}
+    <hr>
+
+    <br><br>
+
+    <a class="btn btn-secondary" style="background: green" onClick="history.go(-1);" role="button">Back</a>
+
+{% endblock content %}

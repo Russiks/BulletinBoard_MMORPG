@@ -1,0 +1,101 @@
+<!--  наследуемся от шаблона default.html, который мы создавали для flatpages -->
+{% extends 'config/default.html' %}
+
+{% load custom_tags %}
+
+{% block title %}
+Ads - {{ block.super }}  <!--Наследование через {{ block.super }} от основного шаблона-->
+{% endblock title %}
+
+
+{% block content %}
+
+    <h1><div><span style="color: #ffffff;"><strong>All advertisements</strong></span></div></h1>
+    <h4><span style="color: #999999;">{{ launch_text }}</span></h4>
+    <h6><span style="color: #999999;">{% current_time '%b %d %Y' %}</span></h6>
+    <hr style="color: #999999;">
+    {# Добавляем форму, которая объединяет набор полей, которые будут отправляться в запросе #}
+    <form action="" method="get">
+       {# Переменная, которую мы передали через контекст, может сгенерировать нам форму с полями #}
+       <h7><span style="color: #999999;">{{ filterset.form.as_p }}</span></h7>
+       {# Добавим кнопку отправки данных формы #}
+       <input type="submit" value="Search" />
+    </form>
+        </p>
+        <a href="{% url 'board_list' %}"><input type="submit" value=" Reset " /></a>
+    <hr style="color: #999999;">
+
+{# Информация о предыдущих страницах #}
+   {% if page_obj.has_previous %}
+       <a href="?{% url_replace page=1 %}" style="color: #ffffff;">1</a>
+       {% if page_obj.previous_page_number != 1 %}
+           <span style="color: #999999;">...</span>
+           <a href="?{% url_replace page=page_obj.previous_page_number %}" style="color: #ffffff;">{{ page_obj.previous_page_number }}</a>
+       {% endif %}
+   {% endif %}
+
+   {# Информация о текущей странице #}
+   <span style="color: #999999;">{{ page_obj.number }}</span>
+
+   {# Информация о следующих страницах #}
+   {% if page_obj.has_next %}
+       <a href="?{% url_replace page=page_obj.next_page_number %}" style="color: #ffffff;">{{ page_obj.next_page_number }}</a>
+       {% if paginator.num_pages != page_obj.next_page_number %}
+           <span style="color: #999999;">...</span>
+           <a href="?{% url_replace page=page_obj.paginator.num_pages %}" style="color: #ffffff;">{{ page_obj.paginator.num_pages }}</a>
+       {% endif %}
+   {% endif %}
+    <hr style="color: #999999;">
+
+    {% for ad in ads %}
+    <div class="card mb-2">
+        <div class="card-header text-white" style="background-color: #000080;">
+            <strong>Clan:</strong> {{ ad.categoryBoard }}
+            <strong>Author:</strong> {{ ad.author }}
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">{{ ad.titleBoard }}</h5>
+            <hr style="color: #999999;">
+           <p class="card-text">{{ ad.contentBoard|safe }}</p>  <!-- Фильтр safe указывает на то, что значение известно как
+           безопасное и поэтому его не нужно экранировать-->
+            <hr style="color: #999999;">
+            <p class="card-text">Feedback: {{ ad.comment_by_ad.count }}</p>  <!--Счетчик откликов-->
+            <hr style="color: #333399;">
+            <a href="{% url 'board_detail' ad.pk %}"  class="btn btn-primary" style="background-color: #74992e;" >Open</a>
+        </div>
+        <div class="card-footer text-muted " style="background-color: #333399;">
+            <strong>Date:</strong> {{ ad.dateCreation }}
+            </p>
+            <strong>Time:</strong> {{ ad.timeCreation }}
+        </div>
+    </div>
+    {% empty %}
+    <h2>
+        <span style="color: #999999;">No announcements here</span>
+    </h2>
+    {% endfor %}
+    <hr style="color: #999999;">
+
+   {# Информация о предыдущих страницах #}
+   {% if page_obj.has_previous %}
+       <a href="?{% url_replace page=1 %}" style="color: #ffffff;">1</a>
+       {% if page_obj.previous_page_number != 1 %}
+           <span style="color: #999999;">...</span>
+           <a href="?{% url_replace page=page_obj.previous_page_number %}" style="color: #ffffff;">{{ page_obj.previous_page_number }}</a>
+       {% endif %}
+   {% endif %}
+
+   {# Информация о текущей странице #}
+   <span style="color: #999999;">{{ page_obj.number }}</span>
+
+   {# Информация о следующих страницах #}
+   {% if page_obj.has_next %}
+       <a href="?{% url_replace page=page_obj.next_page_number %}" style="color: #ffffff;">{{ page_obj.next_page_number }}</a>
+       {% if paginator.num_pages != page_obj.next_page_number %}
+           <span style="color: #999999;">...</span>
+           <a href="?{% url_replace page=page_obj.paginator.num_pages %}" style="color: #ffffff;">{{ page_obj.paginator.num_pages }}</a>
+       {% endif %}
+   {% endif %}
+    <hr style="color: #999999;">
+
+{% endblock content %}
