@@ -41,8 +41,12 @@ ________________________________________________________________________________
 
 ![Image 4](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-06-30.png)
 
+<ul>
+<li><strong>На сайте на главной странице организован поис в по объявлениям с пагинацией страниц</strong></li>
+</ul>
 
-![Image]()
+![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-17-14.png)
+
 ![Image]()
 ![Image]()
 ![Image]()
