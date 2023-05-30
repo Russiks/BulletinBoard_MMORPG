@@ -50,24 +50,25 @@ ________________________________________________________________________________
 ![Image 5](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-17-14.png)
 
 <ul>
-<li><strong>Есть возможность открыть отдельное объявление и оставить комментарий или посмотреть чужие комментарии и их активность</strong></li>
+<li><strong>Есть возможность открыть отдельное объявление и оставить комментарий или посмотреть чужие комментарии и их активность. Если кто-то оставит свой комментарий под объявлением, то автору придет оповещение об этом на почту</strong></li>
 </ul>
 
 ![Image 6](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-19-45.png)
 ![Image 7](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-20-17.png)
+![Image 8](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-23-07.png)
 
 <ul>
 <li><strong>Оставлять комментарии или создавать объявления могут только зарегистрированные пользователи, которые ввели код подтверждения. Для остальных переработано исключение 403</strong></li>
 </ul>
 
-![Image 8](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-32-33.png)
+![Image 9](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-32-33.png)
 
 <ul>
 <li><strong>Авторы объявлений могут откликаться на комментарии пользователей в своих объявлениях или удалять их. Также автор имеет возможность редактировать свои объявления или удалять их</strong></li>
 </ul>
 
-![Image 9](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-21-47.png)
-![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-23-07.png)
+![Image 10](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-21-47.png)
+
 ![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-24-12.png)
 ![Image]()
 ![Image]()
