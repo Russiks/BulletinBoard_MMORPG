@@ -41,16 +41,21 @@ ________________________________________________________________________________
 
 ![Image 4](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-06-30.png)
 
-<h4 style="text-align: center;"><strong>Пара слов о сайте и его работе;)</strong></h4>
+<h4><strong>Пара слов о сайте и его работе:</strong></h4>
 
 <ul>
-<li><strong>На сайте на главной странице организован поиск по объявлениям с пагинацией страниц</strong></li>
+<li><strong>На главной странице сайта организован поиск по объявлениям с пагинацией по страницам</strong></li>
 </ul>
 
-![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-17-14.png)
+![Image 5](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-17-14.png)
 
-![Image]()
-![Image]()
+<ul>
+<li><strong>Есть возможность открыть отдельное объявление и оставить комментарий или посмотреть чужие комментарии и их активность</strong></li>
+</ul>
+
+![Image 6](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-19-45.png)
+![Image](https://github.com/Russiks/BulletinBoard_MMORPG/blob/main/Images/2023-05-30_12-20-17.png)
+
 ![Image]()
 ![Image]()
 ![Image]()
